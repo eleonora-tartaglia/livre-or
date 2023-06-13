@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'American Typewriter';
+    src: url('AmericanTypewriter.woff2') format('woff2'),
+         url('AmericanTypewriter.woff') format('woff');
+}
+
+body {
+    background: url('media/livre.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    font-family: 'American Typewriter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;  /* Adjust according to your needs */
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    flex-wrap: nowrap;  /* Prevent the flex items from wrapping */
+}
+
+.header a,
+.nav a {
+    display: inline-block;  
+    text-decoration: none;
+    color: #8C7853;
+    font-weight: bold;
+    padding: 10px 10px; 
+    border-radius: 5px; 
+    background-color: #1C1712;  
+    margin: 0 10px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    line-height: 1.4em; 
+    text-align: center;  
+}
+
+.header a:hover,
+.nav a:hover {
+    background-color: #1C1712;
+    color: #8C7853;
+    opacity: 0.3;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    color :black;
+}
+
+#form-container {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: #1C1712;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
